@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Smart Garden Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: #4eaf4e;
+      color: #2d3e2d;
+      
+    }
+    header {
+      background-color: #0d6821;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+    }
+    .hero {
+      background: url('images/garden-background.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
+    .hero h1 {
+      font-size: 4em;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+    .card {
+      background: white;
+      4
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding: 2%;
+    }
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .card p {
+      padding: 20px;
+    }
+    footer {
+      background-color: #0d6821;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>&#127807 +  &#128241 Smart Garden</h1>
+    <nav>
+      <a href="#plants">My Plants</a>
+      <a href="#weather">Weather</a>
+      <a href="#calendar">Calendar</a>
+      <a href="#tips">Tips</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Grow With Nature</h1>
+  </section>
+
+  <section id="plants">
+    <h2 style="text-align:center">&#127807 My Plants</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="images/rose.jpg" alt="Plant 1">
+        <p><strong>Rose</strong><br>Watered: 2 days ago</p>
+      </div>
+      <div class="card">
+        <img src="images/alovera.jpg" alt="Plant 2">
+        <p><strong>Aloe Vera</strong><br>Sunlight: Moderate</p>
+      </div>
+      <div class="card">
+        <img src="images/basil.jpg" alt="Plant 3">
+        <p><strong>Basil</strong><br>Watered: Today</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="weather" style="background-color:#e4f1e4">
+    <h2 style="text-align:center">&#9728&#65039 Weather</h2>
+    <p style="text-align:center">Sunny, 27°C, Humidity: 65%</p>
+    <p style="text-align:center">Update this section using a weather API like OpenWeatherMap.</p>
+  </section>
+
+  <section id="calendar">
+    <h2 style="text-align:center">&#128197 Gardening Calendar</h2>
+    <p style="text-align:center">Show planting schedules, watering reminders, and seasonal tasks.</p>
+  </section>
+
+  <section id="tips" style="background-color:#e4f1e4">
+    <h2 style="text-align:center"> &#128241 Gardening Tips</h2>
+    <ul style="max-width: 600px; margin: auto;">
+      <li>Water early in the morning to reduce evaporation.</li>
+      <li>Use compost to enrich your soil.</li>
+      <li>Group plants with similar needs together.</li>
+      <li>Check soil moisture before watering.</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2 style="text-align:center">&#128247 Garden Gallery</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="images/spring blossoms.webp" alt="Gallery 1">
+        <p>Spring Blossoms</p>
+      </div>
+      <div class="card">
+        <img src="images/vegetable patch.jpg" alt="Gallery 2">
+        <p>Vegetable Patch</p>
+      </div>
+      <div class="card">
+        <img src="images/indoor plants.webp" alt="Gallery 3">
+        <p>Indoor Plants</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="background-color:#d0e8d0">
+    <h2 style="text-align:center">&#128233 Contact Us</h2>
+    <form style="max-width: 500px; margin:auto">
+      <label>Name:<br><input type="text" style="width:70%;padding:10px;margin-bottom:10px;border-radius: 5px;"></label><br>
+      <label>Email:<br><input type="email" style="width:70%;padding:10px;margin-bottom:10px;border-radius: 5px;"></label><br>
+      <label>Message:<br><textarea rows="4" style="width:70%;padding:10px;border-radius: 5px;"></textarea></label><br>
+      <button type="submit" style="margin-top:10px;padding:10px 20px;background:#8fc79b;border:none;color:white;border-radius:5px;">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Smart Garden | Built with &#128154 for nature lovers
+  </footer>
+</body>
+</html>
